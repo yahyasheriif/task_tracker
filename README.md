@@ -66,16 +66,5 @@ java -jar target/Task_Tracker-0.0.1-SNAPSHOT.jar
 ```
 Or, you can run it directly from your IDE as a Spring Boot application.
 
-## API Endpoints
-
-(Further details on API endpoints, request/response formats, and authentication would be added here based on a deeper analysis of controller files.)
-
-## Contributing
-
-(Details on how to contribute to the project.)
-
-## License
-
-(License information.)
 
 
