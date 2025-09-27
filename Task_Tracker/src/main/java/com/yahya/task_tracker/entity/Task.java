@@ -40,5 +40,6 @@ public class Task {
     @NotBlank
     private String status;
     @ManyToOne(fetch = FetchType.LAZY)
-    private User user;
+    
+    private String userName;
 }

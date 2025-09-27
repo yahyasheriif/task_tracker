@@ -22,4 +22,10 @@ public class User {
     private String password;
     @OneToMany(mappedBy = "user")
     private List<Task> tasks;
+
+    public User(String username, String password, String email) {
+        this.username = username;
+        this.password = password;
+        this.email = email;
+    }
 }
