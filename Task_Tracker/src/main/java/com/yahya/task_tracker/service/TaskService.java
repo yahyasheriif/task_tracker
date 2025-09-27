@@ -17,7 +17,7 @@ public class TaskService {
     public List<Task> fetchAllTasks() {
         Authentication auth = SecurityContextHolder.getContext().getAuthentication();
         String username = auth.getName();
-        List<Task> tasks = taskRepository.findByUsername(username);
+        List<Task> tasks = taskRepository.findByUserName(username);
         return tasks;
     }
 

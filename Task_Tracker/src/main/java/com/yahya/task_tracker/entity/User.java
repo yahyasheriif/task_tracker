@@ -20,7 +20,7 @@ public class User {
     private String username;
     private String email;
     private String password;
-    @OneToMany(mappedBy = "user")
+    @OneToMany(mappedBy = "userName")
     private List<Task> tasks;
 
     public User(String username, String password, String email) {
