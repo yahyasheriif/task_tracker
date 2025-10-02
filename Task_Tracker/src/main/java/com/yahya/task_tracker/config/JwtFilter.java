@@ -1,7 +1,6 @@
 package com.yahya.task_tracker.config;
 
 import java.io.IOException;
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 import org.springframework.stereotype.Component;
@@ -26,8 +25,10 @@ public class JwtFilter extends OncePerRequestFilter {
 
     @Override
     protected void doFilterInternal(
-        @NonNull HttpServletRequest request, 
-        @NonNull HttpServletResponse response, 
+        @NonNull
+        HttpServletRequest request, 
+        @NonNull 
+        HttpServletResponse response, 
         @NonNull FilterChain filterChain)
             throws ServletException, IOException {
                 String token = request.getHeader("Authorization");
